@@ -1,22 +1,23 @@
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
-import Box from "@mui/material/Box";
+import {
+  Avatar,
+  Button,
+  TextField,
+  Box,
+  Typography,
+  Container,
+  Alert,
+} from "@mui/material";
+
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Alert from "@mui/material/Alert";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 
 const theme = createTheme();
 
 export default function LOgin() {
   const [alert, setalert] = useState(false);
   const [alertMsg, setalertMsg] = useState([]);
-  let location = useLocation();
   const history = useHistory();
   const handleSubmit = (event) => {
     event.preventDefault();
