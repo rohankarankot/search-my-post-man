@@ -71,7 +71,7 @@ const Navbar = () => {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                {localStorage.getItem("isLogin") == "true" ? (
+                {localStorage.getItem("isLogin") === "true" ? (
                   <>
                     <Link
                       to="/home"
@@ -122,7 +122,7 @@ const Navbar = () => {
               </Typography>
             </Link>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              {localStorage.getItem("isLogin") == "true" ? (
+              {localStorage.getItem("isLogin") === "true" ? (
                 <>
                   <Link to="/home" style={{ textDecoration: "none" }}>
                     <Button sx={{ my: 2, color: "white", display: "block" }}>
@@ -147,7 +147,7 @@ const Navbar = () => {
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
-              {localStorage.getItem("isLogin") == "true" ? (
+              {localStorage.getItem("isLogin") === "true" ? (
                 <MenuItem
                   variant="contained"
                   onClick={() => {

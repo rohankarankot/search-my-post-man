@@ -1,5 +1,5 @@
 import { Container, Typography, Button } from "@mui/material";
-import { Link, useHistory, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -26,7 +26,7 @@ const Landing = () => {
         >
           Hunting Post Office
         </Typography>
-        {localStorage.getItem("isLogin") == "true" ? (
+        {localStorage.getItem("isLogin") === "true" ? (
           <Link
             to="/home"
             style={{ color: "black", textDecoration: "none", margin: 20 }}
