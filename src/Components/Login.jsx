@@ -23,6 +23,7 @@ export default function LOgin() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     // eslint-disable-next-line no-console
+    console.log(alertMsg);
     const res = {
       username: data.get("username"),
       password: data.get("password"),
